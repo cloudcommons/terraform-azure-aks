@@ -268,3 +268,9 @@ variable vnet_subnets {
     }
   ]
 }
+
+variable aad_pod_identity_enabled {
+  type        = bool
+  description = "(Optional) Enables Azure Active Directory Pod Identity provides token-based access to Azure Resource Manager. Defaults to false"
+  default     = false
+}
